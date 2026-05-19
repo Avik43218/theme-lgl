@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Encoding=UTF-8
+Name=Theme-LGL
+Description=Liquid Glass Monochrome theme for KDE
+Theme-Id=theme-lgl
+Author=Avik43218
+Type=sddm-theme
+Screenshot=preview.jpeg
+MainScript=Main.qml
+Email=roychoudhuryavik005@gmail.com
+Website=https://github.com/Avik43218/theme-lgl
+QtVersion=6
+
