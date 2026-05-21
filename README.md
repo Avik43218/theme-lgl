@@ -6,3 +6,7 @@ A monochrome liquid-glass like theme for SDDM Login
 1. Clone the repository
 2. Create directory `/usr/share/sddm/themes/theme-lgl`
 3. Copy all the files to `/usr/share/sddm/themes/theme-lgl/`
+
+## Screenshot 
+
+![Preview](preview.jpeg)
