@@ -356,27 +356,41 @@ Item {
             id: pwrBtn
             width: 120
             height: 45
+            
             contentItem: Text { 
-                text: parent.text; 
-                color: "white"; 
-                font.bold: true; 
-                horizontalAlignment: Text.AlignHCenter; 
+                text: pwrBtn.text 
+                color: "white" 
+                font.bold: true 
+                horizontalAlignment: Text.AlignHCenter 
                 verticalAlignment: Text.AlignVCenter 
             }
+            
             background: Rectangle { 
-                color: pwrBtn.hovered ? "#333333" : "#111111"
-                scale: pwrBtn.pressed ? 0.95 : (pwrBtn.hovered ? 1.05 : 1.0)
-                radius: 12; 
-                border.color: "#333333"
-                border.width: 2
+
+                color: Qt.rgba(0, 0, 0, 0.6) 
                 
-                Behavior on color { ColorAnimation { duration: 150 } }
+                scale: pwrBtn.pressed ? 0.95 : (pwrBtn.hovered ? 1.05 : 1.0)
+                radius: 12
+                
+                border.color: Qt.rgba(1, 1, 1, 0.3)
+                border.width: 1.5
+                
+                Rectangle {
+                    anchors.fill: parent
+                    radius: 12
+                    color: "transparent"
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: Qt.rgba(1, 1, 1, 0.15) }
+                        GradientStop { position: 0.4; color: "transparent" }
+                    }
+                }
+                
                 Behavior on scale { NumberAnimation { duration: 150; easing.type: Easing.OutQuad } }
 
                 layer.enabled: true
                 layer.effect: DropShadow {
                     transparentBorder: true
-                    color: Qt.rgba(0, 0, 0, 0.3)
+                    color: Qt.rgba(0, 0, 0, 0.5)
                     radius: 15
                     samples: 30
                     verticalOffset: 3
