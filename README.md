@@ -9,4 +9,4 @@ A monochrome liquid-glass like theme for SDDM Login
 
 ## Screenshot 
 
-![Preview]()
+![Preview](assets/Screenshot_20260519_075841.png)
